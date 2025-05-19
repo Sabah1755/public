@@ -1,0 +1,15 @@
+
+        <html><body>
+        <h2>Convert TL to USD</h2>
+        <input id='tl' placeholder='Enter TL amount'><button onclick='convert()'>Convert</button>
+        <p id='result'></p>
+        <script>
+        function convert() {
+            let tl = parseFloat(document.getElementById('tl').value);
+            let rate = 32.00; // Güncel kur (örnek)
+            let usd = (tl / rate).toFixed(2);
+            document.getElementById('result').innerText = tl + ' TL ≈ ' + usd + ' USD';
+        }
+        </script>
+        </body></html>
+    
